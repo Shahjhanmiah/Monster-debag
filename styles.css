@@ -190,3 +190,16 @@ button {
     flex-direction: column;
   }
 }
+
+@media screen and (min-width: 701px) {
+  #histories {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-bottom: 30px;
+  }
+  .card {
+    text-align: left;
+  }
+}
+
