@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1><div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             
+                Differences of Local storage vs Session storage?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><p>The main difference between this two is the session storage store data in a browser for a session and
+                local storage saves data in browser without any expiration date. Both of them saves data in the key
+                and value pair in the browser but data is deleted when the browser is closed in session storage but
+                data remains in local storage. That means data from session storage is not available for future
+                session but data from local storage can be used, even if we restart the device.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Global Scope vs Block Scope
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Javascript scopes are two types. Global scope and Local scope and Local scope are also two typed,the are Block scope and Function scope. Global scopes are accessible everywhere but there's restrictions in Local scope, their accessibility is limited. Block scope is only accessible between two curly brackets.</div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Different ways to get undefined?
+
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"></div>variable that is not initialized will give undefined
+            function with no return will give undefined
+            parameter that is not passed will give undefined
+            if return has nothing on the right side will return undefined
+            property that does not exists of a object will return undefined
+            accessing array elements outside of the index range will return undefined
+            deleting an element inside an array
+            set a value directly to undefined</div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                How does JS event loop works?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> Js is a single threaded programming language but it can work like asynchronous,that's where the concept of event loop appears.Event loop process waits for the call stack to cleared before it pushes callback function from the Task Queue to the Call stack. If the stack is cleared,the event loop triggers and check tasks. If any tasks exists it pushes it to the call stack,waiting for the call stack to be cleared again and continues the same process.</div>
+        </div>
+      </div></h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
